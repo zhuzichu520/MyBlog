@@ -5,17 +5,27 @@ import { Meta } from '../layout/Meta';
 import { Main } from '../templates/Main';
 
 const About = () => (
-  <Main meta={<Meta title="Lorem ipsum" description="Lorem ipsum" />}>
+  <Main meta={<Meta title="关于" description="关于" />}>
     <Content>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione fuga recusandae quidem.
-        Quaerat molestiae blanditiis doloremque possimus labore voluptatibus distinctio recusandae
-        autem esse explicabo molestias officia placeat, accusamus aut saepe.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione fuga recusandae quidem.
-        Quaerat molestiae blanditiis doloremque possimus labore voluptatibus distinctio recusandae
-        autem esse explicabo molestias officia placeat, accusamus aut saepe.
+        我的头发，
+        <br />
+        它在手上，
+        <br />
+        在笔记本上，
+        <br />
+        在键盘上，
+        <br />
+        在枕头上，
+        <br />
+        就是不在头上，
+        <br />
+        风一吹，
+        <br />
+        它就像蒲公英一样，
+        <br />
+        飞向远方。
+        <br />
       </p>
     </Content>
   </Main>

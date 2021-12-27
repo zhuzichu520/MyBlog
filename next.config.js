@@ -3,10 +3,8 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 });
 
 const baseUrl = '';
-const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = withBundleAnalyzer({
-  assetPrefix: isProd ? '' : '',
   poweredByHeader: false,
   trailingSlash: true,
   basePath: baseUrl,

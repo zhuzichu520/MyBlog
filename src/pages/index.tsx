@@ -10,20 +10,13 @@ import { Config } from '../utils/Config';
 import { getAllPosts } from '../utils/Content';
 
 const Index = (props: IBlogGalleryProps) => (
-  <Main
-    meta={(
-      <Meta
-        title="朱子楚的博客"
-        description={Config.description}
-      />
-    )}
-  >
+  <Main meta={<Meta title="朱子楚的博客" description={Config.description} />}>
     <BlogGallery posts={props.posts} pagination={props.pagination} />
   </Main>
 );
 
 export const getStaticProps: GetStaticProps<IBlogGalleryProps> = async () => {
-  const posts = getAllPosts(['title', 'date', 'slug']);
+  const posts = getAllPosts(['title', 'description', 'date', 'slug', 'image']);
   const pagination: IPaginationProps = {};
 
   if (posts.length > Config.pagination_size) {

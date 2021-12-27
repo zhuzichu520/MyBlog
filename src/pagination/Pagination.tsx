@@ -12,17 +12,17 @@ export type IPaginationProps = {
 const Pagination = (props: IPaginationProps) => (
   <div className="text-sm flex justify-between">
     {props.previous && (
-      <div>
+      <div className="pt-5">
         <Link href={convertUrlToLinkHref(props.previous)} as={props.previous}>
-          <a>← Newer Posts</a>
+          <a>← 上一页</a>
         </Link>
       </div>
     )}
 
     {props.next && (
-      <div className="text-right ml-auto">
+      <div className="text-right ml-auto pt-5">
         <Link href={convertUrlToLinkHref(props.next)} as={props.next}>
-          <a>Older Posts →</a>
+          <a>下一页 →</a>
         </Link>
       </div>
     )}

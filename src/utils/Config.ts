@@ -1,8 +1,8 @@
 export const Config = {
-  site_name: 'Starter',
+  site_name: '',
   title: '朱子楚的博客',
   description: '一些个人文章',
-  url: 'https://example.com',
+  url: 'https://zhuzichu520.github.io',
   locale: 'en',
   author: 'Anonymous',
   pagination_size: 5,

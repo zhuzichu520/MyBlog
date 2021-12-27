@@ -12,10 +12,13 @@ const Navbar = (props: INavbarProps) => (
       {`
         .navbar :global(a) {
           @apply text-gray-700;
+          @apply font-semibold;
+          @apply text-gray-600;
         }
 
         .navbar :global(a:hover) {
           @apply no-underline text-gray-900;
+          @apply text-indigo-500;
         }
       `}
     </style>
